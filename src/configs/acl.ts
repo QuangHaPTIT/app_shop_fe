@@ -43,7 +43,6 @@ const defineRulesFor = (role: string) => {
       break
 
     default:
-      // Mặc định: không có quyền gì
       break
   }
 

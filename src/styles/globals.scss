@@ -5,6 +5,81 @@
 @import '@fontsource/roboto/500.css';
 @import '@fontsource/roboto/700.css';
 
+
+@theme {
+  // Primary Colors
+  --color-primary-light: #8479F2;
+  --color-primary-main: #7367F0;
+  --color-primary-dark: #655BD3;
+  
+  // Secondary Colors
+  --color-secondary-light: #B2B4B8;
+  --color-secondary-main: #A8AAAE;
+  --color-secondary-dark: #949699;
+  
+  // Error Colors
+  --color-error-light: #ED6F70;
+  --color-error-main: #EA5455;
+  --color-error-dark: #CE4A4B;
+  
+  // Warning Colors
+  --color-warning-light: #FFAB5A;
+  --color-warning-main: #FF9F43;
+  --color-warning-dark: #E08C3B;
+  
+  // Info Colors
+  --color-info-light: #1FD5EB;
+  --color-info-main: #00CFE8;
+  --color-info-dark: #00B6CC;
+  
+  // Success Colors
+  --color-success-light: #42CE80;
+  --color-success-main: #28C76F;
+  --color-success-dark: #23AF62;
+  
+  // Custom Colors
+  --color-body-bg-light: #F8F7FA;
+  --color-body-bg-dark: #25293C;
+  --color-track-bg-light: #F1F0F2;
+  --color-track-bg-dark: #363B54;
+  --color-avatar-bg-light: #DBDADE;
+  --color-avatar-bg-dark: #4A5072;
+  --color-table-header-bg-light: #F6F6F7;
+  --color-table-header-bg-dark: #4A5072;
+  
+  // Text Colors (Light Mode - default)
+  --color-text-primary: rgba(47, 43, 61, 0.78);
+  --color-text-secondary: rgba(47, 43, 61, 0.68);
+  --color-text-disabled: rgba(47, 43, 61, 0.42);
+  
+  // Background Colors (Light Mode - default)
+  --color-bg-paper: #FFF;
+  --color-bg-default: #F8F7FA;
+  
+  // Divider
+  --color-divider: rgba(47, 43, 61, 0.16);
+  
+  // Border Radius
+  --radius: 6px;
+}
+
+
+
+[data-theme="dark"],
+.dark {
+  // Text Colors (Dark Mode)
+  --color-text-primary: rgba(208, 212, 241, 0.78);
+  --color-text-secondary: rgba(208, 212, 241, 0.68);
+  --color-text-disabled: rgba(208, 212, 241, 0.42);
+  
+  // Background Colors (Dark Mode)
+  --color-bg-paper: #2F3349;
+  --color-bg-default: #25293C;
+  
+  // Divider (Dark Mode)
+  --color-divider: rgba(208, 212, 241, 0.16);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,8 +90,11 @@ html,
 body {
   min-height: 100%;
   font-family: 'Roboto', sans-serif;
+  background-color: transparent !important;
+
 }
 
 #__next {
   height: 100%;
 }
+
